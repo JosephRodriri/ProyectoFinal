@@ -1,9 +1,16 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = $_POST['exampleFormControlInput1'];
-  $message = $_POST['exampleFormControlTextarea1'];
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
 
-  echo "Email: " . $email . "<br>";
-  echo "Message: " . $message;
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Connected successfully";
 }
 ?>

@@ -18,7 +18,8 @@ btn.forEach((btn) => {
 let enviar = document.getElementById("enviar");
 
 enviar.addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  console.log("Form is being submitted!"); // Optional: Log a message
-  // Add your additional logic here (e.g., validation, AJAX submission)
+  event.preventDefault(); 
+  console.log("Form is being submitted!"); 
 });
+
+
