@@ -62,6 +62,26 @@ if(isset($_POST['btnAccion'])){
                 $mensaje=print_r($_SESSION,true);
 
         break;
+        case "Eliminar":
+            if(is_numeric( openssl_decrypt($_POST['id'],COD,KEY))){
+                $ID=openssl_decrypt($_POST['id'],COD,KEY);
+                
+
+            foreach($_SESSION['CARRITO'] as $indice=>$producto){
+                if($producto['ID']==$ID){
+                    unset($_SESSION['CARRITO'][$indice]);
+                    echo "<script>alert('Elemento borrado...');</script>";
+
+                }
+
+            }
+                
+            }else{
+                $mensaje.="Upss... ID incorrecto".$ID."<br/>";
+            }
+
+        break;
+
     }   
 
 } 
