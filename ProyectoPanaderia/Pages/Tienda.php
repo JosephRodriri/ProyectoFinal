@@ -9,15 +9,13 @@
 
 <!--Carrito-->
   <br>
-
+<?php if($mensaje=""){?>
 <div class="alert alert-success">
-
 <?php echo $mensaje; ?>
 
-  <a href="#" class="badge badge-success">Ver Carrito</a>
-  
+  <a href="./mostrarCarrito.php" class="badge badge-success">Ver Carrito</a>  
 </div>  
-  
+  <?php }?>
 <br>
 <!--inicio de catalogo panaderia-->
   

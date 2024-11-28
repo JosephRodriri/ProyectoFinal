@@ -62,7 +62,7 @@
 
 <?php }else{?>
 <div class="alert alert-success">
-    No hay prosuctos en el carrito
+    No hay productos en el carrito
 </div>
 <?php }?>
 
