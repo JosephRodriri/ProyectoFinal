@@ -31,9 +31,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item me-5">
+          <a class="nav-link" aria-current="page" href="../index.php">inicio</a>
 
         </li>
         <li class="nav-item">
