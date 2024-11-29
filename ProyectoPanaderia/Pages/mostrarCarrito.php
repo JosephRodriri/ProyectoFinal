@@ -66,6 +66,53 @@
 </div>
 <?php }?>
 
+<form class="row g-2">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label small">Nombre</label>
+    <input type="text" class="form-control form-control-sm" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label small">Telefono</label>
+    <input type="text" class="form-control form-control-sm" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label small">Direccion</label>
+    <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label small">Correo</label>
+    <input type="email" class="form-control form-control-sm" id="inputAddress2" placeholder="aaaaaa@bbb.com">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label small">Ciudad</label>
+    <select id="inputState" class="form-select form-select-sm">
+      <option selected>Seleccionar...</option>
+      <option value="Cali">Cali</option>
+      <option value="Palmira">Palmira</option>
+      <option value="Buga">Buga</option>
+      <option value="Tuluá">Tuluá</option>
+      <option value="Buenaventura">Buenaventura</option>
+      <option value="Zarzal">Zarzal</option>
+      <option value="Cartago">Cartago</option>
+      <option value="Candelaria">Candelaria</option>
+      <option value="Roldanillo">Roldanillo</option>
+      <option value="Yumbo">Yumbo</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label small" for="gridCheck">
+        Verificar
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary btn-sm w-100">Realizar Pedido</button>
+  </div>
+</form>
+
+
 <?php 
 include 'templates/pie.php'
 ?>
