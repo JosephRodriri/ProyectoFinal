@@ -47,7 +47,7 @@ if( isset($_SESSION['usuario'])!="adm"){
 
 <!--estructura HTML-->
 <div class="container">
-    <a href="../index.html">inicio</a>
+    <a href="../index.php">inicio</a>
     <a href="Tienda.php">tienda</a>
     <a href="cerrar.php">cerrar</a>
     <br>
