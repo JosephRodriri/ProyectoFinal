@@ -36,13 +36,13 @@
           <a class="nav-link" aria-current="page" href="../index.php">inicio</a>
 
         </li>
-        <li class="nav-item">
+        <li class="nav-item me-5">
           <a class="nav-link" href="Tienda.php">Tienda</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item me-5">
           <a class="nav-link" href="#">Contacto</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item me-5">
           <a class="nav-link" href="mostrarCarrito.php">Carrito(<?php
           echo(empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
           ?>)</a>

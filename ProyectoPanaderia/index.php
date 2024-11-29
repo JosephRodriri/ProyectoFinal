@@ -61,7 +61,7 @@
             <div class="carousel-item active">
                 
                 <div class="card-container">
-                                    <?php
+                    <?php
                     $servicio=$pdo->prepare("SELECT *FROM `servicios`");
                     $servicio->execute();
                     $listaServicios=$servicio->fetchAll(PDO::FETCH_ASSOC);
@@ -109,23 +109,26 @@
 
     <section class="py-5" id="AboutUs">
         <div class="container">
+            <?php
+            $nosotro=$pdo->prepare("SELECT *FROM `nosotros`");
+            $nosotro->execute();
+            $listaNosotros=$nosotro->fetchAll(PDO::FETCH_ASSOC);
+            //print_r($listaProductos);
+            ?>
+            <?php foreach($listaNosotros as $nosotro){ ?>
             <div class="row align-items-center gx-4">
                 <div class="col-md-5">
-                    <div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" src="./images/Nosotros.jpg"></div>
+                    <div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" src="<?php echo $nosotro['img_nosotros']; ?>"></div>
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <div class="ms-md-2 ms-lg-5">
                         <span class="text-muted">Nuestra Historia</span>
-                        <h2 class="display-5 fw-bold">Sobre Nosotros</h2>
-                        <p class="lead">En Cake♥Shop, cada día es una oportunidad para crear algo especial. 
-                Fundada en 2012 por Gustavo Petro Urrego, nuestra panadería nació del amor por las recetas tradicionales y 
-                la pasión por los sabores auténticos. Desde que abrimos nuestras puertas, nos hemos comprometido a ofrecer productos frescos, elaborados 
-                con los mejores ingredientes y una pizca de amor.</p>
-                        <p class="lead mb-0">Nuestra misión es brindarte una experiencia única a través de nuestro pan 
-                recién horneado, pasteles exquisitos y postres irresistibles.</p>
+                        <h2 class="display-5 fw-bold"><?php echo $nosotro['titulo_nosotros']; ?></h2>
+                        <p class="lead"><?php echo $nosotro['resumen_nosotros']; ?></p>
                     </div>
                 </div>
             </div>
+            <?php } ?>
         </div>
     </section>
 
