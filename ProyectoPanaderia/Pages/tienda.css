@@ -24,9 +24,11 @@ body{
   width: 180%;
 }
 
+
 .row, .bg{
   background-color: #FFABAB;
 }
+
 
 .container {
   position: relative; 
